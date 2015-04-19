@@ -3,8 +3,8 @@ enum Year {
     OCTOBER(31), NOVEMBER(30), DECEMBER(31);
     private int day;
 
-    Year(int d) {
-        day = d;
+    Year(int day) {
+        this.day = day;
     }
 
     public int getDay() {
