@@ -1,6 +1,6 @@
 enum Year {
-    JANUARY(31), FEBRUARY(28), MARCH(31), APRIL(30), MAY(31), JUNE(30), JULY(31), AUGUST(31), SEPTEMBER(30),
-    OCTOBER(31), NOVEMBER(30), DECEMBER(31);
+    JAN(31), FEB(28), MAR(31), APR(30), MAY(31), JUN(30), JUL(31), AUG(31), SEP(30),
+    OCT(31), NOV(30), DEC(31);
     private int day;
 
     Year(int day) {
@@ -14,42 +14,42 @@ enum Year {
 
 public class Month {
     public static void main(String[] args) {
-        Year year = Year.APRIL;
+        Year year = Year.valueOf(args[0].substring(0, 3).toUpperCase());
         switch (year) {
-            case JANUARY:
+            case JAN:
                 System.out.println("It's January. In January " + year.getDay() + " day");
                 break;
-            case FEBRUARY:
+            case FEB:
                 System.out.println("It's February. In February " + year.getDay() + " day");
                 break;
-            case MARCH:
+            case MAR:
                 System.out.println("It's March. In March " + year.getDay() + " day");
                 break;
-            case APRIL:
+            case APR:
                 System.out.println("It's April. In April " + year.getDay() + " day");
                 break;
             case MAY:
                 System.out.println("It's May. In May " + year.getDay() + " day");
                 break;
-            case JUNE:
+            case JUN:
                 System.out.println("It's June. In June " + year.getDay() + " day");
                 break;
-            case JULY:
+            case JUL:
                 System.out.println("It's July. In July " + year.getDay() + " day");
                 break;
-            case AUGUST:
+            case AUG:
                 System.out.println("It's August. In August " + year.getDay() + " day");
                 break;
-            case SEPTEMBER:
+            case SEP:
                 System.out.println("It's September. In September " + year.getDay() + " day");
                 break;
-            case OCTOBER:
+            case OCT:
                 System.out.println("It's October. In October " + year.getDay() + " day");
                 break;
-            case NOVEMBER:
+            case NOV:
                 System.out.println("It's November. In November " + year.getDay() + " day");
                 break;
-            case DECEMBER:
+            case DEC:
                 System.out.println("It's December. In December " + year.getDay() + " day");
                 break;
             default:
